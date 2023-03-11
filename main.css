@@ -538,7 +538,9 @@ main img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: safe;
+  overflow: scroll;
+  align-items: center;
 }
 
 .card i {
