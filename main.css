@@ -554,6 +554,7 @@ main img {
 }
 
 .pra p {
+  z-index: 5;
   font-size: 1rem;
   line-height: 150%;
   margin-bottom: 1.75rem;
@@ -580,17 +581,26 @@ main img {
 
 /* Contact */
 .contact {
-  height: 15rem;
+  height: 25rem;
   background-color: #191919;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #6e6e6e;
 }
 
 .contact > p {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.contact > a {
+  height: 10rem;
+  background-color: #191919;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
 }
 
 /* Footer */
@@ -606,5 +616,5 @@ footer p {
 }
 
 footer p:nth-child(2) {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
