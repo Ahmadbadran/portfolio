@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link
       rel="stylesheet"
@@ -32,8 +34,7 @@
       <nav class="nav">
         <div>
           <a href="#"
-            ><h2 class="logo">Portfo<span>lio</span></h2></a
-          >
+            ><h2 class="logo">Portfo<span>lio</span></h2></a>
         </div>
 
         <div class="container">
@@ -58,18 +59,11 @@
       <section class="content">
         <h4>Hello, my name is</h4>
         <h1>Ahmad <span>Badran</span></h1>
-        <h3>I'm a Web Developer</h3>
-        <div>Subsicribe to our newsletter</div>
+        <h3>I'm a Full-Stack Web Developer</h3>
+        <div>Interested! let's talk...</div>
         <div class="newsletter">
-          <form action="#">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Type your email"
-            />
-            <input type="submit" name="submit" value="Send" />
-          </form>
+          <button class="btn" ><a href="#contact">Say Hello!</a></button>
+
         </div>
       </section>
     </header>
@@ -78,25 +72,25 @@
       <main>
         <img src="./img/mitchell-kavan-yoegh5378Cw-unsplash.jpg" />
         <div class="about-text">
-          <h2>About Me</h2>
+          <h2>About</h2>
           <h5>Developer <span>& Designer</span></h5>
           <p>
-            I am a front-end web developer. I can provide clean code and pixel
+            I am a full-stack web developer. I can provide clean code and pixel
             perfect design. I also make the website more & more interactive with
             web animations. I can provide clean code and pixel perfect design. I
             also make the website more more interactive with web animations. A
             responsive design makes your website accessible to all users,
             regardless of their device.
           </p>
-          <button class="btn">Let's talk</button>
+          <button class="btn" ><a href="#contact">let's talk</a></button>
         </div>
       </main>
     </section>
     <!-- Service start -->
     <section class="service" id="services">
-      <h2>Services</h2>
-      <div class="box">
-        <div class="card">
+      <h2>Skills</h2>
+      <div class="box " >
+        <div class="card"data-aos="fade-up-right">
           <i class="bi bi-apple"></i>
           <h5>IOS Development</h5>
           <div class="pra">
@@ -110,7 +104,7 @@
             <p style="text-align: center"></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="flip-left" >
           <i class="bi bi-browser-chrome"></i>
           <h5>Web Development</h5>
           <div class="pra">
@@ -124,7 +118,7 @@
             <p style="text-align: center"></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up-left">
           <i class="bi bi-server"></i>
           <h5>network administrator</h5>
           <div class="pra">
@@ -140,8 +134,11 @@
     </section>
     <section class="service" id="projects">
       <h2>Projects</h2>
-      <div class="box">
-        <div class="card">
+      <div class="box" >
+        
+        <div class="card " data-aos="fade-up-right">
+          
+          <img class="netflix" src="./img/netflix11.png" alt="">
           <i class="bi bi-apple"></i>
           <h5>Netflix clone</h5>
           <div class="pra">
@@ -149,11 +146,11 @@
               Built a special version of netflix using xcode, swift and swiftUi.
               check it out here be sure to read the README file before clone.
             </p>
-            <a href="https://github.com/Ahmadbadran/netflixApp" class="button">Netflix</a>
+            <a href="https://github.com/Ahmadbadran/netflixApp" class="button">GitHub</a>
             <p style="text-align: center"></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="flip-left">
           <i class="bi bi-browser-chrome"></i>
           <h5>Personal Portfolio</h5>
           <div class="pra">
@@ -166,14 +163,13 @@
             <p style="text-align: center"></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
           <i class="bi bi-server"></i>
           <h5>Network Security Design for Backup Server</h5>
           <div class="pra">
             <p>
               The project report aims to implement network security design for
-              Backup Server for an organization.The organization has a backup
-              server, which is currently on its network.
+              Backup Server.Read more in this article.
             </p>
             <a
               href="https://projectsinnetworking.com/network-security-design-for-backup-server/"
@@ -192,8 +188,9 @@
       <!-- Contact me start -->
       <section class="contact">
         <p>Let me build you a website!</p>
-        <button class="button">Hire me</button>
-
+        <!-- <button class="button">Hire me</button> -->
+        
+        <p>Don't hesitate to ask me anything!</p>
         <section class="social">
           <!-- Facebook -->
           <a
@@ -213,14 +210,8 @@
             ><i class="fab fa-google"></i
           ></a>
 
-          <!-- Instagram -->
-          <a
-            class="btn btn-primary"
-            style="background-color: #ac2bac"
-            href="https://www.instagram.com/ahmadbadran57/"
-            role="button"
-            ><i class="fab fa-instagram"></i
-          ></a>
+         
+         
 
           <!-- Linkedin -->
           <a
@@ -240,19 +231,18 @@
             ><i class="fab fa-github"></i
           ></a>
 
-          <!-- Whatsapp -->
-          <a
-            class="btn btn-primary"
-            style="background-color: #25d366"
-            href="https://wa.link/b1vom5"
-            role="button"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
+         
         </section>
       </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    
     <script>
       $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {

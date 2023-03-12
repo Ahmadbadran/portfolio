@@ -12,6 +12,10 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
+
 
 body {
   background-color: #101010;
@@ -47,17 +51,24 @@ section {
   cursor: pointer;
 }
 
-/* nav {
+/* nav bar starts here */
+
+.nav {
   display: flex;
-  align-items: center;
+
+  align-items:center;
   justify-content: space-between;
   padding: 0 4rem;
   padding-top: 3rem;
   max-width: var(--maxWidth);
-  margin: 0 auto;
   width: 100%;
-} */
-
+  height: fit-content;
+  position: sticky;
+  top: 0px;
+  line-height: 65px;
+  text-align: center;
+  /* background-color: antiquewhite; */
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -71,19 +82,7 @@ nav a {
 
 /* Navbar section */
 
-.nav {
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  padding: 0 4rem;
-  padding-top: 3rem;
-  max-width: var(--maxWidth);
-  width: 100%;
-  height: fit-content;
-  position: fixed;
-  line-height: 65px;
-  text-align: center;
-}
+
 
 .nav div.logo {
   float: left;
@@ -193,6 +192,9 @@ nav a {
   }
   .nav div.media_button {
     display: block;
+  }
+  .service div.box{
+    display: grid;
   }
 }
 
@@ -437,6 +439,9 @@ nav ul li a:hover {
   color: white;
   cursor: pointer;
 }
+.btn a {
+  color: white;
+}
 
 .btn:hover {
   background-color: var(--orange);
@@ -484,56 +489,87 @@ nav ul li a:hover {
 
 main {
   display: flex;
-  align-items: center;
+  /* align-items:start; */
   justify-content: space-between;
-  column-gap: 4rem;
+  column-gap: 2rem;
 }
 
 main img {
+  /* flex-direction: row; */
   width: 50%;
-  height: auto;
+  height: 100%;
+  margin-bottom: 3rem;
 }
 
 .about-text h2 {
+  flex-direction: column;
   font-size: 4rem;
   margin-bottom: 1.25rem;
 }
 
 .about-text h5 {
+  flex-direction: column;
   letter-spacing: 0.125rem;
   font-size: 1.375rem;
   margin-bottom: 1.5rem;
 }
 
 .about-text p {
+  flex-direction: column;
   font-size: 1.125rem;
-  line-height: 150%;
+  line-height: 100%;
   margin-bottom: 3rem;
+}
+.about-text .btn a{
+  color: fff;
 }
 
 /* Services */
 .service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: -7rem;
 }
 
 .service > h2 {
+  text-align: center;
   font-size: 4rem;
   margin-bottom: 2.5rem;
 }
 
 .box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* display: grid; */
+  gap: 2rem;
+  /* column-gap: 2rem; */
+}
+.card:hover{
+  box-shadow: rgba(232, 187, 23, 0.19) 0px 8px 24px, rgba(229, 135, 12, 0.19) 0px 16px 56px, rgba(225, 143, 12, 0.19) 0px 24px 80px;
+transition: 0.5s;
+}
+.box .netflix{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100% ; left: 0;
+}
+.box .card:active .netflix{
+  transform: translateY(100%);
+  transition: 0.5s;
+  
 }
 
+
+/* .netflix:hover{
+  background: url("./img/netflix-mockup.png");
+  
+} */
+
 .card {
+  transition: 0.5s;
   width: 100%;
   height: 25rem;
   padding: 1.5rem;
-  background-color: #191919;
+  background-color: #232222;
   border-radius: var(--borderRadius);
   text-align: center;
   display: flex;
@@ -543,10 +579,14 @@ main img {
   align-items: center;
 }
 
+.card::-webkit-scrollbar{
+  display: none;
+}
+
 .card i {
   display: block;
   font-size: 2.5rem;
-  margin: 1rem 0 2rem;
+  margin: 2rem 0 2rem;
   color: var(--orange);
 }
 
@@ -555,7 +595,9 @@ main img {
   margin-bottom: 1rem;
 }
 
+
 .pra p {
+  flex-direction: column;
   z-index: 5;
   font-size: 1rem;
   line-height: 150%;
@@ -583,7 +625,7 @@ main img {
 
 /* Contact */
 .contact {
-  height: 25rem;
+  /* height: 20rem; */
   background-color: #191919;
   display: flex;
   flex-direction: column;
@@ -596,13 +638,14 @@ main img {
 }
 
 .contact > a {
-  height: 10rem;
   background-color: #191919;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
 
-
+.contact > button{
+  margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -614,9 +657,17 @@ footer {
 }
 
 footer p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 footer p:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a{
+  margin-right: 0.4rem;
 }
