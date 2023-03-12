@@ -196,6 +196,26 @@ nav a {
   .service div.box{
     display: grid;
   }
+  .content{
+    align-items: center;
+  }
+  .header{
+    align-items: center;
+    text-align: center;
+  }
+ main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:auto;
+  height: auto;
+ }
+ main > img{
+  
+ 
+ }
+ 
 }
 
 /* Animation */
@@ -407,7 +427,7 @@ nav a {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 1.25rem 0;
 }
 
