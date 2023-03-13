@@ -63,10 +63,11 @@ section {
   max-width: var(--maxWidth);
   width: 100%;
   height: fit-content;
-  position: sticky;
+  position: fixed;
   top: 0px;
   line-height: 65px;
   text-align: center;
+  z-index: 1000;
   /* background-color: antiquewhite; */
 }
 nav ul {
@@ -79,6 +80,7 @@ nav a {
   color: white;
   transition: color var(--transition);
 }
+
 
 /* Navbar section */
 
@@ -124,13 +126,13 @@ nav div a .logo:hover {
 
 .nav div.main_list ul li a {
   text-decoration: none;
-  color: #fff;
+  color:#ffb516;
   line-height: 65px;
   font-size: 1.4rem;
-}
+  }
 
 .nav div.main_list ul li a:hover {
-  color: #ffb516;
+  color: #ffff;
 }
 
 .navTrigger {
@@ -221,6 +223,9 @@ nav div a .logo:hover {
  }
  .about-text p {
   line-height: 1.5rem;
+ }
+ .social a:hover{
+  background-color: #ffb516;
  }
  
 }
@@ -581,7 +586,7 @@ transition: 0.5s;
 }
 .box .card:active .netflix{
   transform: translateY(100%);
-  transition: 0.5s;
+  transition: 1s;
   
 }
 
@@ -699,4 +704,5 @@ footer p:nth-child(2) {
 }
 .social a{
   margin-right: 0.4rem;
+  background-color: transparent;
 }
