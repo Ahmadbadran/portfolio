@@ -97,7 +97,7 @@ nav a {
   font-size: 2.5rem;
 }
 
-.nav div.logo a:hover {
+nav div a .logo:hover {
   color: #ffb516;
 }
 
@@ -211,9 +211,16 @@ nav a {
   width:auto;
   height: auto;
  }
- main > img{
-  
+ #about  img{
+  border-radius: 10px;
+  /* flex-direction: row; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
  
+ }
+ .about-text p {
+  line-height: 1.5rem;
  }
  
 }
@@ -537,7 +544,7 @@ main img {
 .about-text p {
   flex-direction: column;
   font-size: 1.125rem;
-  line-height: 100%;
+  line-height: 1.5rem;
   margin-bottom: 3rem;
 }
 .about-text .btn a{
