@@ -53,14 +53,16 @@ section {
 
 /* nav bar starts here */
 
+
 .nav {
   display: flex;
+  background-color: #222121b9;
 
   align-items:center;
   justify-content: space-between;
   padding: 0 4rem;
   padding-top: 3rem;
-  max-width: var(--maxWidth);
+  /* max-width: var(--maxWidth); */
   width: 100%;
   height: fit-content;
   position: fixed;
@@ -68,15 +70,18 @@ section {
   line-height: 65px;
   text-align: center;
   z-index: 1000;
+  /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,inset rgba(172, 138, 16, 0.8) -6px -2px 16px -5px; */
   /* background-color: antiquewhite; */
 }
 nav ul {
-  list-style: none;
+  list-style:none;
   display: flex;
-  column-gap: 2rem;
+  column-gap: 3rem;
+ 
 }
 
 nav a {
+ 
   color: white;
   transition: color var(--transition);
 }
@@ -100,7 +105,7 @@ nav a {
 }
 
 nav div a .logo:hover {
-  color: #ffb516;
+  color: var(--orange);
 }
 
 .nav div.main_list {
@@ -126,13 +131,16 @@ nav div a .logo:hover {
 
 .nav div.main_list ul li a {
   text-decoration: none;
-  color:#ffb516;
+  color:var(--orange);
   line-height: 65px;
   font-size: 1.4rem;
   }
 
 .nav div.main_list ul li a:hover {
   color: #ffff;
+  border: 1px solid #ffb516;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .navTrigger {
@@ -160,7 +168,7 @@ nav div a .logo:hover {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -170,7 +178,7 @@ nav div a .logo:hover {
 
 @keyframes textclip {
   to {
-    background-position: 200% center;
+    background-position: -200% center;
   }
 }
 
@@ -185,18 +193,22 @@ nav div a .logo:hover {
 @media screen and (max-width: 850px) {
   .navTrigger {
     display: block;
-    margin-top: 3rem;
-    margin-right:3rem;
-
+    /* margin-top: 1rem; */
+    /* margin-right:3rem; */
 
   }
   .nav{
     display:block;
-text-align: center;  
+    text-align: center;  
+    background-color: #222121b9;
+    height: fit-content;
+    justify-items: center;
 }
 .logo{
   display: flex;
-}
+  justify-content: start;
+  /* margin-bottom: 2rem; */
+} 
   .nav div.logo {
     margin-left: 15px;
   }
@@ -269,7 +281,7 @@ text-align: center;
   line-height: 1.5rem;
  }
  .social a:hover{
-  background-color: #ffb516;
+  background-color: var(--orange);
  }
  
 }
