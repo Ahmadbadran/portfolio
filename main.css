@@ -145,6 +145,34 @@ nav div a .logo:hover {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #3d2e74 0%,
+    #3f0c77 29%,
+    #ffb510 67%,
+    #ffb516 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 /* Media qurey section */
 
@@ -157,8 +185,18 @@ nav div a .logo:hover {
 @media screen and (max-width: 850px) {
   .navTrigger {
     display: block;
+    margin-top: 3rem;
+    margin-right:3rem;
+
 
   }
+  .nav{
+    display:block;
+text-align: center;  
+}
+.logo{
+  display: flex;
+}
   .nav div.logo {
     margin-left: 15px;
   }
@@ -184,12 +222,12 @@ nav div a .logo:hover {
   }
   .nav div.main_list ul li {
     width: 100%;
-    text-align: right;
+    text-align: center;
   }
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
-    font-size: 3rem;
+    font-size: rem;
     padding: 20px;
   }
   .nav div.media_button {
@@ -205,6 +243,12 @@ nav div a .logo:hover {
     align-items: center;
     text-align: center;
   }
+  .animate-charcter{
+    font-size:50px;
+  }
+
+  
+
  main{
   display: flex;
   flex-direction: column;
